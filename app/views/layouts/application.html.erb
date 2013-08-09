@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<title><%= content_for?(:title) ? yield(:title) : "Container of Music" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,500,800' rel='stylesheet' type='text/css'>
+  	<%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="top-bar" data-options="is_hover:false">
+      <ul class="title-area">
+        <li class="name">
+          <a href="/home">C O N T A I N E R &nbsp; O F &nbsp; M U S I C</a>
+        </li>
+      </ul>
+      
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="active">
+            <a href="/home">ABOUT</a> 
+          </li>
+          <li class="divider"></li>
+          <li class="active">
+             <a href="/stories">YOUR STORIES</a>
+          </li>
+          <li class="divider"></li>
+          <li class="active">
+             <a href="/drawingboard">THE DRAWINGBOARD</a> 
+          </li>
+          <li class="divider"></li>
+          <li class="active">
+             <a href="/help">GET INVOLVED</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="container">
+
+    <%= yield %>
+
+    </div>
+  </body>
+</html>

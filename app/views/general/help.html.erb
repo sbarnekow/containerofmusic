@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="large-6 column">
+		<h1>The following is a story and it needs your input...</h1>
+		<h3 id="what">What do you LOVE about music?
+		</br>
+		</br>
+		What are the challenges and inspiring stories that you have come across related to music education? </h3>
+		<h1>We want to know.</h1>
+	</div>
+
+	<div class="large-6 column" id="email-form">
+		<%= form_tag do %>
+				<%= label_tag(:interested, "Your Email")%><br />
+				<%= text_field_tag(:interested, contents = nil, options = { :rows => 15})%><br />
+				<%= label_tag(:body, "Your Story" ) %><br />
+				<%= text_area_tag(:body, contents = nil, options = {:cols => 30, :rows => 8}) %><br />
+				<%= submit_tag "Submit", :id => 'flatbutton', :value => "Send Us Your Story" %>
+		<% end %>
+	</div>
+</div>

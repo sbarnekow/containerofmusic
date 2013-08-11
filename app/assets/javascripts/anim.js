@@ -6,4 +6,5 @@ $(document).ready(function(){
 	});
 
 	jQuery('h1 a').fitText(1.1);
+	jQuery('.container-title').fitText();
 });

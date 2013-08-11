@@ -12,28 +12,34 @@ $base-style: true;
   font-family: 'entypo', sans-serif;
 }
 
+.entypo-right {
+	margin-top: 10%;
+}
+
 
 body {
 	background-color: #f1f0ee
 }
 
-.title#front{
-	margin-left: 5%;
-	text-align: left;
+body#index {
+	background-color: white
 }
 
-.title {
+.container-title{
+	margin-left: 5%;
+	text-align: left;
 	display: block;
 	float: left;
 	width: 100%;
 }
 
-.title h1 {
+.title span {
 	color: black;
-	width: 100%;
+	width: 75%;
 	font-family: 'Exo', sans-serif;
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 5em;
+	line-height: 2;
 }
 
 li.name h1 a{
@@ -78,11 +84,10 @@ li.name a {
 }
 
 #flatbutton {
-	text-shadow: 0, 0, -1px 0 black;
 	border-radius: 20px;
 	border: none;
 	padding: 15px;
-	font-size: 20px;
+	font-size: 1em;
 	color: white;
 }
 
@@ -120,4 +125,14 @@ div.drop-down h3{
 #what {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
+}
+
+.top-bar .title-area .name h1 a {
+	color: #595750
+}
+
+.top-bar-section ul li > a { 
+	font-family: 'Exo', sans-serif;
+	font-weight: 900;
+	size: 2em
 }

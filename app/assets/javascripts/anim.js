@@ -4,4 +4,6 @@ $(document).ready(function(){
 		}, function (){
     	$(this).children(':nth-child(2)').stop(true, true).slideUp(500);
 	});
+
+	jQuery('h1 a').fitText(1.1);
 });
